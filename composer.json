@@ -1,0 +1,38 @@
+{
+    "name": "triwinvendor/aws",
+    "homepage": "http://aws.amazon.com/sdkforphp",
+    "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
+    "keywords": ["aws","amazon","sdk","s3","ec2","dynamodb","cloud","glacier"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Amazon Web Services",
+            "homepage": "http://aws.amazon.com"
+        }
+    ],
+    "support": {
+        "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
+        "issues": "https://github.com/aws/aws-sdk-php/issues"
+    },
+    "require": {
+        "php": ">=5.5"
+    },
+    "suggest": {
+        "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+        "ext-curl": "To send requests using cURL",
+        "ext-sockets": "To use client-side monitoring",
+        "doctrine/cache": "To use the DoctrineCacheAdapter",
+        "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aws\\": "Aws/"
+        },
+        "files": ["Aws/functions.php"]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        }
+    }
+}
