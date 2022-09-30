@@ -31,7 +31,7 @@
             "JmesPath\\": "JmesPath/",
             "Psr\\Http\\Message\\": "Psr/Http/Message/"
         },
-        "files": ["Aws/functions.php"]
+        "files": ["Aws/functions.php", "GuzzleHttp/functions_include.php", "GuzzleHttp/Psr7/functions_include.php", "GuzzleHttp/Promise/functions_include.php", "JmesPath/JmesPath.php"]
     },
     "extra": {
         "branch-alias": {
